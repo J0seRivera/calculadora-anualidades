@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valor actual</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+  <section>
+    <h2>Formula del valor actual</h2>
+    <h2>Un pago de renta anual e interés capitalizado varias veces al año</h2>
+    <img src="../images/ValorActual.jpg" alt="formula del valor actual">
+    <form name="fVActual">
+      <table>
+        <tr>
+          <td>Renta Anual</td>
+          <td><input placeholder="R" name="renta" type="number"></td>
+        </tr>
+        <tr>
+          <td>Tasa nominal j</td>
+          <td><input placeholder="j %" name="interes" type="number"></td>
+        </tr>
+
+        <tr>
+          <td>Capitalización m</td>
+          <td><input placeholder="m" name="capitalizacion" type="number"></td>
+        </tr>
+
+        <tr>
+          <td>Tiempo (en años)</td>
+          <td><input placeholder="n" name="tiempo" type="number"></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <p id="res-vActual">...</p>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
+  <script src="../javaScript/valorActual.js"></script>
+</body>
+
+</html>
