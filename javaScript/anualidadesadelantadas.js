@@ -1,17 +1,17 @@
-var formulario = document.forms.formulario_anVencidas
-var resultado = document.getElementById("res-anualidades-vencidas")
+var formulario = document.forms.formula_anAdelantadas
+var resultado = document.getElementById("res-anualidades-adelantadas")
 
-formulario.renta.oninput = calcularAV
+formulario.monto.oninput = calcularAV
 formulario.tiempo.oninput = calcularAV
 formulario.interes.oninput = calcularAV
 
 
 function calcularAV() {
-    let r = parseFloat(formulario.renta.value)
+    let s = parseFloat(formulario.monto.value)
     let n = parseFloat(formulario.tiempo.value)
     let i = parseFloat((formulario.interes.value)/100)
-    let total = ((((1 + i)**n)-1)/i)*r
 
+    let total = (s*((((1+i)**n)-1)/i))*((1+i)/1)
 
     resultado.innerHTML = total.toFixed(2)
 }
